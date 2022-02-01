@@ -1,0 +1,45 @@
+@charset "utf-8"; /* Charset UTF-8 */
+
+/* GoogleFonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+
+/* Global CSS */
+
+@import './modules/global.css';
+
+/* Header CSS */
+
+@import './modules/header.css';
+
+/* Introduction CSS */
+
+@import './modules/introduction.css';
+
+/* Experience CSS */
+
+@import './modules/experience.css';
+
+/* Formation CSS */
+
+@import './modules/formation.css';
+
+/* Tecnologies CSS */
+
+@import './modules/tecnologies.css';
+
+/* Projects CSS */
+
+@import './modules/projects.css';
+
+/* Footer CSS */
+
+@import './modules/footer.css';
+
+/* Snackbar CSS */
+
+@import './modules/snackbar.css';
+
+/* Hover CSS */
+
+@import './modules/animations.css';

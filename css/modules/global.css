@@ -1,0 +1,183 @@
+/* Works more as a reset CSS file */
+
+:root {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #04aa6a;
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Fira Sans", Arial, sans-serif;
+  color: #141414;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+p {
+  text-align: justify;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+img {
+  transition: 0.2s;
+}
+
+/* Container class */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6.25rem;
+  max-width: 75rem;
+  padding: 2.5rem 1.25rem;
+  margin: 0 auto;
+}
+
+/* Subtitle class */
+
+.subtitle {
+  font-size: 5rem;
+  word-break: break-all;
+  line-height: 1;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.subtitle:hover {
+  color: #04aa6a !important;
+}
+
+@media (max-width: 50rem) {
+  .subtitle {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial !important;
+  }
+}
+
+/* Resume text class */
+
+.first--text {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 3.75rem;
+}
+
+/* Habilities list */
+
+.habilities--list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  align-content: start;
+}
+
+.habilities--list li {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  border-radius: 1rem;
+  background: #ffffff;
+  color: #141414;
+  padding: 0.313rem 0.625rem;
+  transition: 0.3s;
+}
+
+.habilities--list li:hover {
+  color: #ffffff;
+}
+
+/* Habilities list */
+
+.habilities--list li.hability--html:hover {
+  background: #f16524;
+}
+.habilities--list li.hability--css:hover {
+  background: #05a4db;
+}
+.habilities--list li.hability--js:hover {
+  background: #ead41c;
+}
+.habilities--list li.hability--react:hover {
+  background: #26d9fd;
+}
+.habilities--list li.hability-sql:hover {
+  background: #1e4c68;
+}
+.habilities--list li.hability--poo:hover {
+  background: #0d8ac7;
+}
+.habilities--list li.hability--java:hover {
+  background: #ec2025;
+}
+.habilities--list li.hability--bootstrap:hover {
+  background: #8512fb;
+}
+.habilities--list li.hability--hosting:hover {
+  background: #2e416b;
+}
+.habilities--list li.hability--cs:hover {
+  background: #ffd800;
+}
+.habilities--list li.hability--customer:hover {
+  background: #00bc22;
+}
+.habilities--list li.hability--github:hover {
+  background: #161312;
+}
+
+/* <a> tag global style */
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  color: #04aa6a;
+}
+
+@media (max-width: 50rem) {
+  a {
+    text-decoration: underline !important;
+  }
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #04aa6a;
+}

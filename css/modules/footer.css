@@ -1,0 +1,59 @@
+/* Footer CSS */
+
+.footer {
+  background: #000000;
+}
+
+.footer .container {
+  padding: 7.5rem 1.25rem 3.75rem 1.25rem;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.footer--text {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #cccccc;
+}
+
+.footer--contact li {
+  font-size: 2.25rem;
+  font-weight: bold;
+  line-height: 1.1;
+  color: #ffffff;
+  margin-bottom: 1.875rem;
+}
+
+.footer--contact li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* .footer--contact li a#email-link:hover {
+  color: #d93025;
+}
+.footer--contact li a#cellphone-link:hover {
+  color: #04aa6a;
+}
+.footer--contact li a#linkedin-link:hover {
+  color: #0a66c2;
+} */
+
+.footer--copy {
+  grid-column: 1 / -1;
+  font-size: 1.125rem;
+  color: #8f8f8f;
+  text-align: center;
+}
+
+/* Responsivity */
+
+@media (max-width: 50rem) {
+  .footer .container {
+    grid-template-columns: 1fr;
+  }
+  .footer--contact li {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}

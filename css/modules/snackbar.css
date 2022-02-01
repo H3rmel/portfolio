@@ -1,0 +1,43 @@
+/* Snackbar CSS */
+
+#snackbar {
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 1.875rem;
+  min-width: 15rem;
+  margin-left: -7.813rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  text-align: center;
+  color: #ffffff;
+  background: #04aa6a;
+  visibility: hidden;
+}
+
+#snackbar.show {
+  visibility: visible;
+  animation: fadeIn 0.5s, fadeOut 0.5s 1.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+  to {
+    bottom: 1.875rem;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    bottom: 1.875rem;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}

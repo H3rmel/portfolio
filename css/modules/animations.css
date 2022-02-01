@@ -1,0 +1,89 @@
+/* Hover CSS */
+
+/* Background da esquerda para direita */
+
+.hvr-sweep-to-right {
+  display: inline-block;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  border-radius: 1rem;
+}
+
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #04aa6a;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-sweep-to-right:hover,
+.hvr-sweep-to-right:focus,
+.hvr-sweep-to-right:active {
+  color: #ffffff;
+}
+
+.hvr-sweep-to-right:hover:before,
+.hvr-sweep-to-right:focus:before,
+.hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/* Tag para texto */
+
+.tag, .tag:before {
+  border-radius: .25rem;
+}
+
+/* Tags para diferenciar as cores */
+
+.node-tag:before {
+  background: #6bbf47;
+}
+
+.react-tag:before {
+  background: #26d9fd;
+}
+
+.cs-tag:before {
+  background: #ffd800;
+}
+
+.quality-tag:before {
+  background: #00bc22;
+}
+
+.email-tag:before {
+  background: #d93025;
+}
+
+.cellphone-tag:before {
+  background: #04aa6a;
+}
+
+.linkedin-tag:before {
+  background: #0a66c2;
+}
+
+.origamid-tag:before {
+  background: #9b30f9;
+}

@@ -1,0 +1,154 @@
+/* Tecnologies CSS */
+
+.tecnologias {
+  padding: 7.5rem 1.25rem;
+  position: relative;
+}
+
+.tecnologias .subtitle {
+  color: #e0e0e0;
+}
+.tecnologias--text {
+  color: #525252;
+}
+.tecnologias--text strong {
+  color: #141414;
+}
+
+.tecnologias--list {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  background: #f5f5f5;
+  border-radius: 1rem;
+  box-shadow: 0 0 1px 0 rgb(0 0 0 / 8%), 0 4px 14px rgb(0 0 0 / 6%);
+  transition: 0.3s;
+}
+
+.tecnologias--list:hover {
+  transform: translateY(-.625rem);
+}
+
+.tecnologias--list li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+  font-size: 1.125rem;
+  line-height: 1.33;
+}
+
+@keyframes levitating {
+  0% {
+    transform: translateY(0.75rem);
+  }
+
+  50% {
+    transform: translateY(0rem);
+  }
+
+  100% {
+    transform: translateY(0.75rem);
+  }
+}
+
+.progress {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 6.25rem;
+  padding: 0 0.25rem;
+  align-items: center;
+  margin-top: 0.5rem;
+  height: 1.25rem;
+  width: auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.progress--value {
+  border-radius: 6.25rem;
+  height: 0.875rem;
+  width: 0;
+  transition: 3s;
+}
+
+.progress--value.load {
+  animation: loading 3s forwards;
+  animation-iteration-count: 1;
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: calc(var(--value) * 1%);
+  }
+}
+
+.progress .tooltip {
+  position: absolute;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  padding: .25rem .5rem;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: .25rem;
+  left: 45%;
+  transition: 0.5s;
+}
+
+.progress:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-2.25rem);
+}
+
+/* Colors for each progress bar */
+
+.progress--value#progress--html {
+  background: #f16524;
+}
+.progress--value#progress--css {
+  background: #05a4db;
+}
+.progress--value#progress--js {
+  background: #ead41c;
+}
+.progress--value#progress--node {
+  background: #6bbf47;
+}
+.progress--value#progress--react {
+  background: #26d9fd;
+}
+.progress--value#progress--sql {
+  background: #1e4c68;
+}
+.progress--value#progress--github {
+  background: #161312;
+}
+.progress--value#progress--hosting {
+  background: #2e416b;
+}
+.progress--value#progress--email {
+  background: #DC4639;
+}
+/* Responsivity */
+
+@media (max-width: 50rem) {
+  .tecnologias {
+    grid-template-columns: 1fr;
+    padding: 3.75rem 1.25rem;
+    gap: 2.5rem;
+  }
+  .tecnologias::after {
+    bottom: -3.5rem;
+    left: 80%;
+  }
+}
+
+@media (max-width: 25rem) {
+  .tecnologias::after {
+    left: 75%;
+  }
+}

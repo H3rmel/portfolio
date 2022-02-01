@@ -1,0 +1,73 @@
+/* Introduction CSS */
+
+.introducao {
+  align-items: center;
+}
+
+.introducao h1 {
+  font-family: 'Mea Culpa', cursive;
+  font-size: 4rem;
+  letter-spacing: .25rem;
+  line-height: 1.125;
+  margin-bottom: 1.875rem;
+  position: relative;
+  transition: 0.5s;
+}
+
+.introducao p {
+  font-size: 1rem;
+  color: #525252;
+}
+
+.introducao img {
+  filter: drop-shadow(0 5px 10px rgba(0, 0, 0, 0.1));
+  animation: levitating 4s infinite;
+}
+
+@keyframes levitating {
+  0% {
+    transform: translateY(0.75rem);
+  }
+
+  50% {
+    transform: translateY(0rem);
+  }
+
+  100% {
+    transform: translateY(0.75rem);
+  }
+}
+
+/* Responsivity */
+
+@media (max-width: 62.5rem) {
+  .introducao h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 50rem) {
+  .introducao {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .introducao h1 {
+    font-size: 2rem;
+  }
+
+  .introducao h1::before {
+    width: 1.875rem;
+    height: 0.625rem;
+    left: 0;
+  }
+}
+
+@media (max-width: 31.25rem) {
+  .introducao {
+    grid-template-columns: 1fr;
+  }
+  .introducao img {
+    display: none;
+  }
+}

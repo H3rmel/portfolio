@@ -1,0 +1,95 @@
+/* Experience CSS */
+
+.experiencia .subtitle {
+  color: #e0e0e0;
+}
+.experiencia--text {
+  color: #525252;
+}
+.experiencia--text strong {
+  color: #141414;
+}
+
+.empresa {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.625rem 1.25rem;
+  padding: 1.25rem;
+  background: #f5f5f5;
+  margin-bottom: 1.25rem;
+  border-radius: 1rem;
+  position: relative;
+  box-shadow: 0 0 1px 0 rgb(0 0 0 / 8%), 0 4px 14px rgb(0 0 0 / 6%);
+  transition: 0.3s;
+}
+
+.empresa:hover {
+  transform: translateY(-.625rem);
+}
+
+.empresa::before {
+  content: "";
+  display: block;
+  width: 0.25rem;
+  height: 1.25rem;
+  background: #04aa6a;
+  position: absolute;
+  top: 1.25rem;
+  left: -0.25rem;
+}
+
+.empresa--year {
+  position: absolute;
+  top: 1.375rem;
+  left: -9.25rem;
+  text-align: right;
+  width: 8rem;
+  color: #525252;
+  font-size: 0.875rem;
+}
+
+.empresa--title {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  font-weight: bold;
+}
+
+.empresa--text {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #525252;
+}
+
+/* Responsivity */
+
+@media (max-width: 50rem) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .experiencia .subtitle {
+    color: #141414;
+  }
+
+  .experiencia--text {
+    font-size: 1.25rem;
+  }
+
+  .empresa--year {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+
+  .empresa--year::before {
+    content: "Ano: ";
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+}
