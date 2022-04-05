@@ -150,6 +150,9 @@ img {
 .habilities--list li.hability--github:hover {
   background: #161312;
 }
+.habilities--list li.hability--blazor:hover {
+  background: #5C2D91;
+}
 
 /* <a> tag global style */
 

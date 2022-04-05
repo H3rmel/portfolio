@@ -118,11 +118,8 @@
 .progress--value#progress--node {
   background: #6bbf47;
 }
-.progress--value.progress--react {
+.progress--value#progress--react {
   background: #26d9fd;
-}
-.progress--value#progress--svelte {
-  background: #FF3E00;
 }
 .progress--value#progress--sql {
   background: #1e4c68;
@@ -135,6 +132,9 @@
 }
 .progress--value#progress--email {
   background: #DC4639;
+}
+.progress--value#progress--blazor {
+  background: #5C2D91;
 }
 /* Responsivity */
 
