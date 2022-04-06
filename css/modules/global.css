@@ -153,6 +153,9 @@ img {
 .habilities--list li.hability--blazor:hover {
   background: #5C2D91;
 }
+.habilities--list li.hability--csharp:hover {
+  background: #953DAC;
+}
 
 /* <a> tag global style */
 

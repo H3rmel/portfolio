@@ -87,3 +87,15 @@
 .origamid-tag:before {
   background: #9b30f9;
 }
+
+.blazor-tag:before {
+  background: #5C2D91;
+}
+
+.umbler-tag:before {
+  background: #557cf2;
+}
+
+.csharp-tag:before {
+  background: #953DAC;
+}
